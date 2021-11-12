@@ -1,0 +1,114 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  
+  <servlet>
+  	<servlet-name>cocacola</servlet-name>
+  	<servlet-class>com.wolken.Cocacola</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>fanta</servlet-name>
+  	<servlet-class>com.wolken.Fanta</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>frooti</servlet-name>
+  	<servlet-class>com.wolken.Frooti</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>mazza</servlet-name>
+  	<servlet-class>com.wolken.Mazza</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>mirinda</servlet-name>
+  	<servlet-class>com.wolken.Mirinda</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>mountaindew</servlet-name>
+  	<servlet-class>com.wolken.MountainDew</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>pepsi</servlet-name>
+  	<servlet-class>com.wolken.Pepsi</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>slice</servlet-name>
+  	<servlet-class>com.wolken.Slice</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>sprite</servlet-name>
+  	<servlet-class>com.wolken.Sprite</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>thumbeup</servlet-name>
+  	<servlet-class>com.wolken.ThumbsUp</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>coke</servlet-name>
+  	<url-pattern>/coke</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>fanta</servlet-name>
+  	<url-pattern>/fanta</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>frooti</servlet-name>
+  	<url-pattern>/frooti</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>mazza</servlet-name>
+  	<url-pattern>/mazza</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>mirinda</servlet-name>
+  	<url-pattern>/mirinda</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>mountaindew</servlet-name>
+  	<url-pattern>/mountaindew</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>pepsi</servlet-name>
+  	<url-pattern>/pepsi</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>slice</servlet-name>
+  	<url-pattern>/slice</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>sprite</servlet-name>
+  	<url-pattern>/sprite</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>thumbeup</servlet-name>
+  	<url-pattern>/thumbeup</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+  	<welcome-file>flavour.html</welcome-file>
+  </welcome-file-list>
+  
+</web-app>

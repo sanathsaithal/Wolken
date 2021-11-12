@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="validation.js"></script>
+</head>
+<body>
+    <header class="p-3 mb-2 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="font-weight-bolder">facebook</h2>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-light" style="float: right;">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12 space">
+                    <img src="https://web.classplusapp.com/static/media/loginCover.c813756b.svg" alt="register">
+                </div>
+                
+                <div class="col-md-8 col-12">
+                    <h1>Sign up</h1>
+                    <div class="row">
+                        <div class="col-4"><label>Name: </label></div>
+                        <div class="col"><input type="text" id="name" onblur="validateName()" class="form-control-sm form-control" placeholder="Enter your name"></div>    
+                        <div class="col"><label class="lblErr" id="errName"></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><label>Email: </label></div>
+                        <div class="col"><input type="email" id="email" onblur="validateEmail()" class="form-control-sm form-control" placeholder="Enter your email"></div>    
+                        <div class="col"><label class="lblErr" id="errEmail"></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><label>Contact Number: </label></div>
+                        <div class="col"><input type="tel" id="contact" onblur="validateContact()" class="form-control-sm form-control" placeholder="Enter contact number"></div>    
+                        <div class="col"><label class="lblErr" id="errContact"></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><label>Date of Birth: </label></div>
+                        <div class="col"><input type="date" id="dob" class="form-control-sm form-control"></div>   
+                        <div class="col"><label class="lblErr" id="errDate"></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><label>Gender: </label></div>
+                        <div class="col">
+                            <input type="radio" id="gender1" name="gender" value="male">
+                            <label for="contactChoice1">Male</label>
+                            <input type="radio" id="gender2" name="gender" value="female">
+                            <label for="contactChoice2">Female</label>
+                            <input type="radio" id="gender3" name="gender" value="others">
+                            <label for="contactChoice3">Others</label><br></div> 
+                            <div class="col"><label class="lblErr" id="errGender"></label></div>   
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><label>Relationship Status: </label></div>
+                         <div class="col">
+                            <input type="checkbox" id="relationship1" name="relationship1" value="married">
+                            <label for="relationship1"> Married</label>
+                            <input type="checkbox" id="relationship2" name="relationship2" value="single">
+                            <label for="relationship2"> Single</label>
+                            <input type="checkbox" id="relationship3" name="relationship3" value="divorced">
+                            <label for="relationship3"> Divorced</label><br></div> 
+                            <div class="col"><label class="lblErr" id="errRelationshipStatus"></label></div>   
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><label>City: </label></div>
+                        <div class="col"><input type="text" onblur="validateCity()" id="city" class="form-control-sm form-control" placeholder="Enter city"></div>    
+                        <div class="col"><label class="lblErr" id="errCity"></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><label>Nationality: </label></div>
+                        <div class="col"><select id="nationality" class="form-control">
+                            <option value="">Select</option>
+                            <option value="india">India</option>
+                            <option value="england">England</option>
+                            <option value="british">British</option></select>
+                        </div> 
+                        <div class="col"><label class="lblErr" id="errNationality"></label></div>   
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><label>Password: </label></div>
+                        <div class="col"><input type="password" id="password" onblur="validatePassword()" class="form-control-sm form-control" placeholder="Enter password"></div>    
+                        <div class="col"><label class="lblErr" id="errPassword"></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><label>Confirm password: </label></div>
+                        <div class="col"><input type="password" id="conPassword" class="form-control-sm form-control" onblur="validateConPassword()" placeholder="Confirm password"></div>    
+                        <div class="col"><label class="lblErr" id="errConPassword"></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"><button type="button" class="btn btn-outline-primary size" onclick="validation()">REGISTER</button></div>
+                        <div class="col-3"><button type="reset" class="btn btn-outline-primary size">RESET</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    
+    <footer class="bg-primary text-white">
+        <div class="container">
+            <h4 class="font-weight-bolder" style="text-align: center;">@copyright Reserved 2021</h4>
+        </div>
+    </footer>
+</body>
+</html>

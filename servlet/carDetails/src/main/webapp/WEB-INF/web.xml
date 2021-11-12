@@ -1,0 +1,113 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  <servlet-name>ford</servlet-name>
+  <servlet-class>com.wolken.FordServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>mahindra</servlet-name>
+  <servlet-class>com.wolken.MahindraServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>hyundai</servlet-name>
+  <servlet-class>com.wolken.HyundaiServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>nexa</servlet-name>
+  <servlet-class>com.wolken.NexaServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>honda</servlet-name>
+  <servlet-class>com.wolken.HondaServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>kia</servlet-name>
+  <servlet-class>com.wolken.KiaServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>mg</servlet-name>
+  <servlet-class>com.wolken.MGServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>tata</servlet-name>
+  <servlet-class>com.wolken.TataServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>skoda</servlet-name>
+  <servlet-class>com.wolken.SkodaServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>volkswagen</servlet-name>
+  <servlet-class>com.wolken.SkodaServlet</servlet-class>
+  </servlet>
+  
+  
+  
+ 
+
+  
+  <servlet-mapping>
+  <servlet-name>ford</servlet-name>
+  <url-pattern>/ford</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>mahindra</servlet-name>
+  <url-pattern>/mahindra</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>hyundai</servlet-name>
+  <url-pattern>/hyundai</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>nexa</servlet-name>
+  <url-pattern>/nexa</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>honda</servlet-name>
+  <url-pattern>/honda</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>kia</servlet-name>
+  <url-pattern>/kia</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>mg</servlet-name>
+  <url-pattern>/mg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>tata</servlet-name>
+  <url-pattern>/tata</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>skoda</servlet-name>
+  <url-pattern>/skoda</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>volkswagen</servlet-name>
+  <url-pattern>/volkswagen</url-pattern>
+  </servlet-mapping>
+</web-app>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="regLogin.js"></script>
+</head>
+<body>
+    <header class="p-3 mb-2 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="font-weight-bolder">facebook</h2>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-light" style="float: right;">Register</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12" style="margin-top: 20%;">
+                    <h1>Login</h1>
+                    
+                    <div class="row">
+                        <div class="col-3"><label>Email: </label></div>
+                        <div class="col"><input type="email" id="email" class="form-control-sm form-control" placeholder="Enter your email"></div>    
+                        <div class="col"><label class="lblErr" id="errEmail"></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"><label>Password: </label></div>
+                        <div class="col"><input type="password" id="password" class="form-control-sm form-control" placeholder="Enter password"></div>    
+                        <div class="col"><label class="lblErr" id="errPassword"></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"><button type="button" class="btn btn-outline-primary size" onclick="validateToLogin()">LOGIN</button></div>
+                        <div class="col-3"><button type="reset" class="btn btn-outline-primary size">RESET</button></div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12" style="margin-top: 10%;">
+                    <img src="https://imgs.bharatmatrimony.com/bmimgs/login/login-otp-banner.png" alt="register">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    
+    <footer class="bg-primary text-white">
+        <div class="container">
+            <h4 class="font-weight-bolder" style="text-align: center;">@copyright Reserved 2021</h4>
+        </div>
+    </footer>
+</body>
+</html>
